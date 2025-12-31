@@ -1,0 +1,149 @@
+:root {
+  --primary: rgba(87, 202, 164, 0.4);
+  --accent: #0B3C5D;
+  --text: #1F2933;
+  --accent_2: #E6F6F1;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(241, 241, 241, 0.4);
+    padding: 1rem 1rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0.5rem 0 0.5rem;
+    padding: 0;
+    align-items: center;
+}
+nav a {
+    font-size: 1.2rem;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 3px solid #0B3C5D;
+}
+
+.container {
+  max-width: 1000px;   /* Breite des Inhalts */
+  margin: 0 auto;      /* zentriert */
+  background-color: #ffffff; /* Inhaltsfläche */
+  padding: 20px;
+}
+
+#logo_big {
+    display: flex;
+    height: 20vh;
+    width: auto;
+    margin: 1rem;
+    justify-content: center;
+}
+
+#vorstellung-h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--accent);
+    padding-top: 0rem;
+}
+
+.vorstellung {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person img {
+    height: 15rem;
+    width: auto;
+    padding: 0; /* wichtig für exakte Zentrierung */
+}
+
+.person p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.info > * {
+  margin-bottom: 0.75rem;
+}
+
+.info h4 {
+    font-size: 1.5rem;
+    color: black;
+    padding: 0;
+    margin: 1.75;
+}
+
+.info p {
+    font-size: 1.0rem;
+    color: black;
+    margin: 0;
+    line-height: 1.75rem;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+.rechtliches {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    gap: 3rem;
+    padding-top: 2rem;
+    background-color: var(--primary)
+}
+
+.rechtliches p {
+    font-size: 1.1rem;
+}
+
+.rechtliches a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .parallax-bg {
+    transform: none !important;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
