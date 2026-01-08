@@ -209,11 +209,13 @@ nav a:hover {
   nav {
     flex-wrap: wrap;
     gap: 0,7rem;
+    font-size: 0.5rem;
   }
   nav ul {
     gap: 0.7rem;
+    font-size: 0.5rem;
   }
   nav a {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
